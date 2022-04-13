@@ -1,0 +1,40 @@
+@use '../abstracts/variable' as *;
+@use '../base/typography' as *;
+
+.btn-lg {
+  @include btn_lg;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.btn-sm {
+  @include btn_sm;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.btn-primary {
+  background-color: $data-color-secondary;
+  border-color: $data-color-secondary;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  &:hover {
+    background-color: $data-color-secondary-dark;
+    border-color: $data-color-secondary-dark;
+  }
+
+  &.disabled, 
+  &:disabled {
+    background-color: $data-color-disabled;
+    border-color: $data-color-disabled;
+    color: $data-color-disabled-text;
+  }
+}
+
+.btn-dark {
+  background-color: $data-color-Shade1;
+  border-color: $data-color-Shade1;
+  border-radius: 0;
+  text-transform: uppercase;
+}

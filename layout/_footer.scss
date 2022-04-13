@@ -1,0 +1,24 @@
+@use '../abstracts/variable' as *;
+
+.icon { 
+  color: $data-color-disabled-text;
+  svg {
+    width: 50px; 
+    height: 50px;
+    margin: .5em;
+    fill: #fff;
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.white_color{
+  fill: #fff;
+}
+
+footer {
+  .collapse:not(.show){
+    display: block;
+  }
+}
